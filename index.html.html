@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">Registration</h1>
+    <form action="./login.html" method="">
+        <p align="center">
+            <input 
+            type="text"
+            placeholder="Enter your name"
+            name="name"/>
+        </p>
+        <p align="center">
+            <input 
+            emanil="email"
+            placeholder="Enter your email"
+            name="email"/>
+             
+        </p>
+        <p align="center">
+            <input 
+            type="password"
+            password="password"
+            placeholder="Enter your password"
+            name="password" required/>
+        </p>
+        <p align="center">
+           <input 
+           type="text"
+           placeholder="Enter your mobile number"
+           name="mobile"
+           maxlength="10"
+           oninput="this.value=this.value.replace(/[^0-9]/g,'')"
+           required>
+        </p>
+        <p align="center">
+           <input 
+           type="radio"
+           id="gmale"
+           name="gender"
+           value="male"/>
+           <label for="gmale">Male</label> 
+           <input 
+           type="radio"
+           id="gfemale"
+           name="gender"
+           value="female"/>
+           <label for="gfemale">Female</label>
+        </p> 
+
+        <p>
+        <!-- <img src="https://preview.redd.it/9eq66kfns0z61.jpg?auto=webp&s=a2556fb1cd99198c3ee1fa65f83decb5088f6d67" width="200" height="200"> -->
+        </p> 
+
+        <p align="center">
+            <input id="checkbox" type="checkbox" value="10th"/>
+            <label for="checkbox">10th</label>
+            <input id="checkbox" type="checkbox" value="Inter"/>
+            <label for="checkbox">Inter</label>
+            <input id="checkbox" type="checkbox" value="Diploma"/>
+            <label for="checkbox">Diploma</label>
+            <input id="checkbox" type="checkbox" value="Btech"/>
+            <label for="checkbox">Btech</label>
+        </p> 
+        <p align="center">
+            <select>
+            <option value="">select your City</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Guntur">Guntur</option>
+            <option value="Vijayawada">Vijayawada</option>
+        </select>
+        </p>
+        <p align="center">
+        <button>register</button>
+        </p>
+
+</body>
+</html>
+
+
+
+
+
+
