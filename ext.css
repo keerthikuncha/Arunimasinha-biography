@@ -1,0 +1,8 @@
+body{
+    background-color: aqua;
+    background-image:url("shizuka_1-removebg-preview.png"),url("shizuka2-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-position: left,right;
+    background-attachment: fixed;
+    background-size: 20%,20%;
+}
