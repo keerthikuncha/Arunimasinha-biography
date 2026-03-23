@@ -1,94 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <link rel="stylesheet" href="ext2.css">
-</head>
-<body>
-   <pre>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <style>
+      body {
+        background-color: pink;
+      }
+      .parent {
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(20px);
+        width: 25%;
+        text-align: center;
+        margin: 5% auto 5% auto;
+        padding: 10px 10px 30px 10px;
+        font-family: sans-serif;
+        box-shadow: 0px 1px 40px rgba(255, 255, 255, 0.7);
+        border-radius: 10px;
+      }
+      .form-field input {
+        padding: 10px;
+        width: 80%;
+        border-radius: 8px;
+        margin: 5px 0px 5px 0px;
+      }
+      .parent div {
+        margin: 5% 0%;
+      }
+      .form-field button{
+        width: 80%;
+        border-radius: 8px;
+        padding: 10px;
+        background-color:blue;       
+        color:whitesmoke;
 
+      }
+    </style>
+    </head>
+    <body>
+    <form action="./login.html" class="parent">
+      <h2><i>REGISTER</i></h2>
+      <div class="form-field">
+        <input type="text" placeholder="Enter your name" name="name" required />
+      </div>
+      <div class="form-field">
+        <input
+          type="Email"
+          placeholder="Enter your Email"
+          name="name"
+          required
+        />
+      </div>
 
-    
-   </pre>
-    <h1 align="center">Registration</h1>
-    <form action="./login.html" method="">
-        <p align="center">
-            <input 
-            type="text"
-            placeholder="Enter your name"
-            name="name"/>
-        </p>
-        <p align="center">
-            <input 
-            emanil="email"
-            placeholder="Enter your email"
-            name="email"/>
-             
-        </p>
-        <p align="center">
-            <input 
-            type="password"
-            password="password"
-            placeholder="Enter your password"
-            name="password" required/>
-        </p>
-        <p align="center">
-           <input 
-           type="text"
-           placeholder="Enter your mobile number"
-           name="mobile"
-           maxlength="10"
-           oninput="this.value=this.value.replace(/[^0-9]/g,'')"
-           required>
-        </p>
-        <p align="center">
-           <input 
-           type="radio"
-           id="gmale"
-           name="gender"
-           value="male"/>
-           <label for="gmale">Male</label> 
-           <input 
-           type="radio"
-           id="gfemale"
-           name="gender"
-           value="female"/>
-           <label for="gfemale">Female</label>
-        </p> 
-
-        <p>
-        <!-- <img src="https://preview.redd.it/9eq66kfns0z61.jpg?auto=webp&s=a2556fb1cd99198c3ee1fa65f83decb5088f6d67" width="200" height="200"> -->
-        </p> 
-
-        <p align="center">
-            <input id="checkbox" type="checkbox" value="10th"/>
-            <label for="checkbox">10th</label>
-            <input id="checkbox" type="checkbox" value="Inter"/>
-            <label for="checkbox">Inter</label>
-            <input id="checkbox" type="checkbox" value="Diploma"/>
-            <label for="checkbox">Diploma</label>
-            <input id="checkbox" type="checkbox" value="Btech"/>
-            <label for="checkbox">Btech</label>
-        </p> 
-        <p align="center">
-            <select>
-            <option value="">select your City</option>
-            <option value="Hyderabad">Hyderabad</option>
-            <option value="Guntur">Guntur</option>
-            <option value="Vijayawada">Vijayawada</option>
+      <div class="form-field">
+        <input
+          type="password"
+          placeholder="Enter your Password"
+          name="Password"
+          required
+        />
+      </div>
+      <div class="form-field">
+        <input
+          type="number"
+          placeholder="Enter Mobile Number"
+          name="phone number"
+          required
+        />
+      </div>
+      <div class="form-Dob">
+        <label for="">Date of Birth</label>
+        <input type="date" required />
+      </div>
+      <div class="form-radio">
+        Gender:<input
+          type="radio"
+          id="gmale"
+          name="gender"
+          value="male"
+          required
+        />
+        <label for="gmale">Male</label>
+        <input
+          type="radio"
+          id="gfemale"
+          name="gender"
+          value="female"
+          required
+        />
+        <label for="gfemale">Female</label>
+      </div>
+      <div class="form-field2">
+        <input type="checkbox" id="10th" value="10th" />
+        <label for="10th">10th</label>
+        <input type="checkbox" id="inter" value="Inter" />
+        <label for="inter">Inter</label>
+        <input type="checkbox" id="Btech" value="Btech" />
+        <label for="Btech">Btech</label>
+      </div>
+      <div>
+        <input type="file" style="width: 200px" required />
+      </div>
+      <div class="form-field2">
+        <select required>
+          <option value="">Select Your City</option>
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="Guntur">Guntur</option>
+          <option value="Vijayawada">Vijayawada</option>
         </select>
-        </p>
-        <p align="center">
-        <button>register</button>
-        </p>
+      </div>
 
-</body>
+      <div class="form-field2">
+        <textarea
+          required
+          placeholder="Enter your address"
+          name=""
+          id=""
+        ></textarea>
+      </div>
+      <div class="form-field">
+        <button>Register</button>
+      </div>
+    </form>
+  </body>
 </html>
-
-
-
-
-
-
